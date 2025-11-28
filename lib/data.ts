@@ -1,0 +1,46 @@
+import { SalesData } from '@/types';
+
+export const mockSalesData: Record<number, SalesData[]> = {
+  2022: [
+    { year: 2022, month: 'Jan', sales: 125000, revenue: 1500000 },
+    { year: 2022, month: 'Feb', sales: 135000, revenue: 1620000 },
+    { year: 2022, month: 'Mar', sales: 142000, revenue: 1704000 },
+    { year: 2022, month: 'Apr', sales: 138000, revenue: 1656000 },
+    { year: 2022, month: 'May', sales: 156000, revenue: 1872000 },
+    { year: 2022, month: 'Jun', sales: 148000, revenue: 1776000 },
+    { year: 2022, month: 'Jul', sales: 162000, revenue: 1944000 },
+    { year: 2022, month: 'Aug', sales: 158000, revenue: 1896000 },
+    { year: 2022, month: 'Sep', sales: 172000, revenue: 2064000 },
+    { year: 2022, month: 'Oct', sales: 185000, revenue: 2220000 },
+    { year: 2022, month: 'Nov', sales: 192000, revenue: 2304000 },
+    { year: 2022, month: 'Dec', sales: 210000, revenue: 2520000 },
+  ],
+  2023: [
+    { year: 2023, month: 'Jan', sales: 145000, revenue: 1740000 },
+    { year: 2023, month: 'Feb', sales: 152000, revenue: 1824000 },
+    { year: 2023, month: 'Mar', sales: 168000, revenue: 2016000 },
+    { year: 2023, month: 'Apr', sales: 158000, revenue: 1896000 },
+    { year: 2023, month: 'May', sales: 175000, revenue: 2100000 },
+    { year: 2023, month: 'Jun', sales: 182000, revenue: 2184000 },
+    { year: 2023, month: 'Jul', sales: 195000, revenue: 2340000 },
+    { year: 2023, month: 'Aug', sales: 188000, revenue: 2256000 },
+    { year: 2023, month: 'Sep', sales: 205000, revenue: 2460000 },
+    { year: 2023, month: 'Oct', sales: 218000, revenue: 2616000 },
+    { year: 2023, month: 'Nov', sales: 225000, revenue: 2700000 },
+    { year: 2023, month: 'Dec', sales: 245000, revenue: 2940000 },
+  ],
+  2024: [
+    { year: 2024, month: 'Jan', sales: 185000, revenue: 2220000 },
+    { year: 2024, month: 'Feb', sales: 192000, revenue: 2304000 },
+    { year: 2024, month: 'Mar', sales: 208000, revenue: 2496000 },
+    { year: 2024, month: 'Apr', sales: 198000, revenue: 2376000 },
+    { year: 2024, month: 'May', sales: 215000, revenue: 2580000 },
+    { year: 2024, month: 'Jun', sales: 222000, revenue: 2664000 },
+    { year: 2024, month: 'Jul', sales: 235000, revenue: 2820000 },
+    { year: 2024, month: 'Aug', sales: 228000, revenue: 2736000 },
+    { year: 2024, month: 'Sep', sales: 245000, revenue: 2940000 },
+    { year: 2024, month: 'Oct', sales: 258000, revenue: 3096000 },
+    { year: 2024, month: 'Nov', sales: 265000, revenue: 3180000 },
+    { year: 2024, month: 'Dec', sales: 285000, revenue: 3420000 },
+  ]
+};
