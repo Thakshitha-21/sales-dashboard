@@ -7,21 +7,26 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82CA9D'
 export const SalesPieChart = ({ data, threshold = 0 }: ChartProps) => {
   const filteredData = threshold ? data.filter(item => item.sales >= threshold) : data;
 
+  // Format data for pie chart
+  const pieData = filteredData.map(item => ({
+    name: item.month,
+    value: item.sales
+  }));
+
   return (
     <ResponsiveContainer width="100%" height={400}>
       <PieChart>
         <Pie
-          data={filteredData}
+          data={pieData}
           cx="50%"
           cy="50%"
           labelLine={false}
-          label={({ month, sales }) => `${month}: ${sales.toLocaleString()}`}
+          label={({ name, value }) => `${name}: ${value.toLocaleString()}`}
           outerRadius={150}
           fill="#8884d8"
-          dataKey="sales"
-          nameKey="month"
+          dataKey="value"
         >
-          {filteredData.map((entry, index) => (
+          {pieData.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
