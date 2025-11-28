@@ -32,3 +32,8 @@ A modern sales analytics dashboard built with Next.js 15, TypeScript, and Tailwi
 ```bash
 git clone https://github.com/Thakshitha-21/sales-dashboard.git
 cd sales-dashboard
+2.Install Dependencies:
+npm install
+3.Run the development server:
+npm run dev
+4.Open http://localhost:3000 in your browser.
