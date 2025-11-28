@@ -1,4 +1,5 @@
 export interface SalesData {
+  [key: string]: string | number; // Add index signature
   year: number;
   month: string;
   sales: number;

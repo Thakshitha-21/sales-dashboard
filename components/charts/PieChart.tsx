@@ -15,7 +15,7 @@ export const SalesPieChart = ({ data, threshold = 0 }: ChartProps) => {
           cx="50%"
           cy="50%"
           labelLine={false}
-          label={({ month, sales }: { month: string; sales: number }) => `${month}: ${sales}`}
+          label={({ month, sales }) => `${month}: ${sales.toLocaleString()}`}
           outerRadius={150}
           fill="#8884d8"
           dataKey="sales"
@@ -25,7 +25,7 @@ export const SalesPieChart = ({ data, threshold = 0 }: ChartProps) => {
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
-        <Tooltip />
+        <Tooltip formatter={(value) => value.toLocaleString()} />
         <Legend />
       </PieChart>
     </ResponsiveContainer>
