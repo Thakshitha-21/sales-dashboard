@@ -15,7 +15,7 @@ export const SalesPieChart = ({ data, threshold = 0 }: ChartProps) => {
           cx="50%"
           cy="50%"
           labelLine={false}
-          label={({ month, sales }) => `${month}: ${sales}`}
+          label={({ month, sales }: { month: string; sales: number }) => `${month}: ${sales}`}
           outerRadius={150}
           fill="#8884d8"
           dataKey="sales"
